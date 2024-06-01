@@ -1,0 +1,67 @@
+{
+  "item": [
+    {
+      "id": "edfb73b8-26b6-4a9d-a606-9fda942f0440",
+      "name": "/vote",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "vote"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"<candidate_name>\",\"votes\":\"<number_of_votes>\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "fee37f2e-c961-4503-a65b-602e6ae60247",
+      "name": "/count",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "count"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "8cad69ba-8efe-4081-9cc5-6251d1f02ab6",
+    "name": "Election API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Collection for Election API",
+      "type": "text/plain"
+    }
+  }
+}
